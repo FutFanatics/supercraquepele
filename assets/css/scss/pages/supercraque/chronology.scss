@@ -1,0 +1,128 @@
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+.c-history{
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/history/bg-history.jpg');
+    background-size: cover;
+    padding: 60px 20px 20px 20px;
+
+    @include md{
+        padding: 60px 0px;
+    } 
+
+    .item{
+        .content-history{
+            position: relative;
+            max-height: 200px;
+            overflow: hidden;
+
+            
+            @include md{
+                max-height: 400px;
+                overflow: auto;
+
+                &::-webkit-scrollbar-track {
+                    background-color: #F4F4F4;
+                }
+                &::-webkit-scrollbar {
+                    width: 6px;
+                    background: #F4F4F4;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #dad7d7;
+                }
+            }
+            &.active{
+               max-height: 1200px;
+            }
+            
+        }
+        .see-more{
+            
+            width: 100%;
+            border:#000000 3px solid;
+            display: flex;
+            justify-content: center;
+            color: #000;
+            font-size: 16px;
+            padding: 8px 0px;
+            font-weight: 800;
+            bottom: 0;
+            text-transform: uppercase;
+            z-index: 99;
+            margin-top: 16px;
+            
+            &.active{
+
+            }
+            @include md{
+                display: none;
+            }
+        }
+
+        .text-history{
+            &_toptitle{
+                color: #C3281E;
+                font-weight: 700;
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                padding-top: 48px;
+
+                @include md{
+                    padding-top: 0;
+                }
+            }
+            &_title{
+                font-weight: 700;
+                padding-top: 12px;
+                padding-bottom: 16px;
+                font-size: 30px;
+                margin-bottom: 0;
+            }
+            &_content{
+                font-weight: 600;
+                font-size: 16px;
+                padding-top: 16px;
+                text-align: justify;
+                &:first-child{
+                    padding-top: 0px;
+                }
+               @include md{
+                text-align: start;
+               }
+                
+            }
+        }
+    }
+    .slick-nav_historia{
+        justify-content: space-between;
+        color: #FFF;
+        padding: 0px 0px;
+        @include md{
+            justify-content: center;
+        }
+    
+        button{
+            background-color: transparent;
+            border: none;
+            padding-top: 16px;
+    
+            i{
+                font-size: 30px;
+                color: #000000;
+                font-weight: 300;
+            }
+        }
+        .current{
+            font-weight: 800;
+            font-size: 40px;
+            color: #757575;
+        }
+        .total{
+            font-size: 25px;
+            color: #000000;
+            font-weight: 600;
+        }
+    }
+}
