@@ -1,128 +1,54 @@
 @mixin md{
     @media (min-width: 1200px) { @content; }
 }
-.c-history{
-    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/history/bg-history.jpg');
+.c-chronology{
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-test.png');
+    min-height: 100vh;
+    padding: 100px 0px;
     background-size: cover;
-    padding: 60px 20px 20px 20px;
+    background-position: center;
 
-    @include md{
-        padding: 60px 0px;
-    } 
-
-    .item{
-        .content-history{
-            position: relative;
-            max-height: 200px;
-            overflow: hidden;
-
-            
-            @include md{
-                max-height: 400px;
-                overflow: auto;
-
-                &::-webkit-scrollbar-track {
-                    background-color: #F4F4F4;
-                }
-                &::-webkit-scrollbar {
-                    width: 6px;
-                    background: #F4F4F4;
-                }
-                &::-webkit-scrollbar-thumb {
-                    background: #dad7d7;
-                }
-            }
-            &.active{
-               max-height: 1200px;
-            }
-            
-        }
-        .see-more{
-            
-            width: 100%;
-            border:#000000 3px solid;
-            display: flex;
-            justify-content: center;
-            color: #000;
-            font-size: 16px;
-            padding: 8px 0px;
-            font-weight: 800;
-            bottom: 0;
-            text-transform: uppercase;
-            z-index: 99;
-            margin-top: 16px;
-            
-            &.active{
-
-            }
-            @include md{
-                display: none;
-            }
-        }
-
-        .text-history{
-            &_toptitle{
-                color: #C3281E;
-                font-weight: 700;
-                font-size: 18px;
-                text-transform: uppercase;
-                margin-bottom: 0;
-                padding-top: 48px;
-
-                @include md{
-                    padding-top: 0;
-                }
-            }
-            &_title{
-                font-weight: 700;
-                padding-top: 12px;
-                padding-bottom: 16px;
-                font-size: 30px;
-                margin-bottom: 0;
-            }
-            &_content{
-                font-weight: 600;
-                font-size: 16px;
-                padding-top: 16px;
-                text-align: justify;
-                &:first-child{
-                    padding-top: 0px;
-                }
-               @include md{
-                text-align: start;
-               }
-                
-            }
-        }
+    .box-chronology{
+        padding: 100px 0px 0px 0px;
+        align-items: center;
+        position: relative;
     }
-    .slick-nav_historia{
-        justify-content: space-between;
-        color: #FFF;
-        padding: 0px 0px;
-        @include md{
-            justify-content: center;
+    .col-content{
+        margin-left: 82px;
+    }
+    .chronology{
+        &-img{
+            width: 100%;
         }
-    
-        button{
-            background-color: transparent;
-            border: none;
-            padding-top: 16px;
-    
-            i{
-                font-size: 30px;
-                color: #000000;
-                font-weight: 300;
+        &-time{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 20px;
+            border-radius: 100%;
+            left: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #FFF;
+            transform: translateX(-50%);
+            
+            span{
+                font-size: 70px;
+                font-weight: 700;
+                color: #FFF;
             }
         }
-        .current{
-            font-weight: 800;
-            font-size: 40px;
-            color: #757575;
+        &-title{
+            color: #FFF;
+            font-size: 30px;
+            font-weight: 700;
         }
-        .total{
-            font-size: 25px;
-            color: #000000;
-            font-weight: 600;
+        &-content{
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 300;
+            padding-top: 16px;
         }
     }
 }

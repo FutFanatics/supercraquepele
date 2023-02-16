@@ -1,22 +1,22 @@
 (function($){
 
-	var containershirt= $('.shirt__slick')
+	var containerking= $('.slick__king')
 	var containerwin = $(".win__slick")
 	var containerhistory = $(".slick__history")
 	var containeridols = $(".slick__idols")
 	var containershield = $(".slick__shield")
 
-	containershirt.slick({
+	containerking.slick({
 		autoplay: false,
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
 		pauseOnHover: false,
 		arrows: true,
 		dots: false,
-		prevArrow: $('.slick-nav_shirt').find('.slick-prev'),
-        nextArrow: $('.slick-nav_shirt').find('.slick-next'),
+		prevArrow: $('.slick-nav_king').find('.slick-prev'),
+        nextArrow: $('.slick-nav_king').find('.slick-next'),
 		adaptiveHeight: true,
-		slidesToShow: 1,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		responsive: [{
 			breakpoint: 768,

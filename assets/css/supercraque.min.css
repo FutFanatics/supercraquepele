@@ -1044,39 +1044,26 @@ p {
   margin-bottom: 0px;
 }
 
+.topo {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+}
+.topo .img-top {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  height: 300px;
+}
+
 .c-home {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/backgroundhome.png");
-  min-height: 95vh;
-  background-position-x: left;
-  display: flex;
-  align-items: center;
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/homedeskpele.jpg");
+  min-height: 100vh;
   position: relative;
   justify-content: center;
-  padding: 80px 20px 20px 20px;
+  background-repeat: no-repeat;
   background-size: cover;
-  animation: backgroundanimation 30s linear infinite;
-}
-@keyframes backgroundanimation {
-  0% {
-    background-position-x: left;
-  }
-  25% {
-    background-position-x: 25%;
-  }
-  50% {
-    background-position-x: 50%;
-  }
-  75% {
-    background-position-x: 75%;
-  }
-  100% {
-    background-position-x: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .c-home {
-    padding: 80px 0px 20px 0px;
-  }
+  background-position: center;
 }
 .c-home .home-text {
   color: #FFFFFF;
@@ -1145,135 +1132,121 @@ p {
 
 .c-king {
   background-color: #000;
+  padding: 60px 0px;
 }
 .c-king .king-title {
-  font-size: 80px;
+  font-size: 90px;
   color: #fff;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   padding-bottom: 16px;
+  letter-spacing: -1px;
 }
 .c-king .king-content {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
+}
+.c-king .king-card {
+  width: 100%;
+}
+.c-king .slick__king .item .king-card {
+  width: 300px;
+  padding: 32px;
+  border-radius: 10px;
+  background-color: #0F0F0F;
+  border: 1px solid #0F0F0F;
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+}
+.c-king .slick__king .item .king-card .king-box-icon {
+  height: 40px;
+  opacity: 0.5;
+  transition: 0.8s ease-in-out;
+}
+.c-king .slick__king .item .king-card .king-box-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-left: 16px;
+  font-weight: 700;
+  color: #363636;
+  transition: 0.8s ease-in-out;
+}
+.c-king .slick__king .item .king-card .king-box-content {
+  color: #363636;
+  font-size: 18px;
+  padding-top: 8px;
+  transition: 0.8s ease-in-out;
+}
+.c-king .slick__king .item .king-card:hover {
+  border: 1px solid #FFA82D;
+}
+.c-king .slick__king .item .king-card:hover .king-box-icon {
+  opacity: 1;
+}
+.c-king .slick__king .item .king-card:hover .king-box-title {
+  color: #FFFFFF;
+}
+.c-king .slick__king .item .king-card:hover .king-box-content {
+  color: #FFFFFF;
+}
+.c-king .slick-nav_king {
+  margin-bottom: 8px;
+}
+.c-king .slick-nav_king button {
+  background: transparent;
+  border: none;
+}
+.c-king .slick-nav_king button i {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.5019607843);
 }
 
-.c-history {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/history/bg-history.jpg");
+.c-chronology {
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-test.png");
+  min-height: 100vh;
+  padding: 100px 0px;
   background-size: cover;
-  padding: 60px 20px 20px 20px;
+  background-position: center;
 }
-@media (min-width: 1200px) {
-  .c-history {
-    padding: 60px 0px;
-  }
-}
-.c-history .item .content-history {
+.c-chronology .box-chronology {
+  padding: 100px 0px 0px 0px;
+  align-items: center;
   position: relative;
-  max-height: 200px;
-  overflow: hidden;
 }
-@media (min-width: 1200px) {
-  .c-history .item .content-history {
-    max-height: 400px;
-    overflow: auto;
-  }
-  .c-history .item .content-history::-webkit-scrollbar-track {
-    background-color: #F4F4F4;
-  }
-  .c-history .item .content-history::-webkit-scrollbar {
-    width: 6px;
-    background: #F4F4F4;
-  }
-  .c-history .item .content-history::-webkit-scrollbar-thumb {
-    background: #dad7d7;
-  }
+.c-chronology .col-content {
+  margin-left: 82px;
 }
-.c-history .item .content-history.active {
-  max-height: 1200px;
-}
-.c-history .item .see-more {
+.c-chronology .chronology-img {
   width: 100%;
-  border: #000000 3px solid;
+}
+.c-chronology .chronology-time {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 20px;
+  border-radius: 100%;
+  left: 50%;
   display: flex;
+  align-items: center;
   justify-content: center;
-  color: #000;
-  font-size: 16px;
-  padding: 8px 0px;
-  font-weight: 800;
-  bottom: 0;
-  text-transform: uppercase;
-  z-index: 99;
-  margin-top: 16px;
+  border: 1px solid #FFF;
+  transform: translateX(-50%);
 }
-@media (min-width: 1200px) {
-  .c-history .item .see-more {
-    display: none;
-  }
-}
-.c-history .item .text-history_toptitle {
-  color: #C3281E;
+.c-chronology .chronology-time span {
+  font-size: 70px;
   font-weight: 700;
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  padding-top: 48px;
-}
-@media (min-width: 1200px) {
-  .c-history .item .text-history_toptitle {
-    padding-top: 0;
-  }
-}
-.c-history .item .text-history_title {
-  font-weight: 700;
-  padding-top: 12px;
-  padding-bottom: 16px;
-  font-size: 30px;
-  margin-bottom: 0;
-}
-.c-history .item .text-history_content {
-  font-weight: 600;
-  font-size: 16px;
-  padding-top: 16px;
-  text-align: justify;
-}
-.c-history .item .text-history_content:first-child {
-  padding-top: 0px;
-}
-@media (min-width: 1200px) {
-  .c-history .item .text-history_content {
-    text-align: start;
-  }
-}
-.c-history .slick-nav_historia {
-  justify-content: space-between;
   color: #FFF;
-  padding: 0px 0px;
 }
-@media (min-width: 1200px) {
-  .c-history .slick-nav_historia {
-    justify-content: center;
-  }
-}
-.c-history .slick-nav_historia button {
-  background-color: transparent;
-  border: none;
-  padding-top: 16px;
-}
-.c-history .slick-nav_historia button i {
+.c-chronology .chronology-title {
+  color: #FFF;
   font-size: 30px;
-  color: #000000;
+  font-weight: 700;
+}
+.c-chronology .chronology-content {
+  color: #FFF;
+  font-size: 16px;
   font-weight: 300;
-}
-.c-history .slick-nav_historia .current {
-  font-weight: 800;
-  font-size: 40px;
-  color: #757575;
-}
-.c-history .slick-nav_historia .total {
-  font-size: 25px;
-  color: #000000;
-  font-weight: 600;
+  padding-top: 16px;
 }
 
 .c-win {
