@@ -2,9 +2,8 @@
 
 	var containerking= $('.slick__king')
 	var containerwin = $(".win__slick")
-	var containerhistory = $(".slick__history")
-	var containeridols = $(".slick__idols")
-	var containershield = $(".slick__shield")
+	var containerCuriosityText = $(".slick-curiosity_text")
+	var containerCuriosityImg = $(".slick-curiosity_img")
 
 	containerking.slick({
 		autoplay: false,
@@ -31,16 +30,18 @@
 		var current = currentSlide + 1;
 		$('.slick-nav_shirt').find('.slick-numbers .current').html(current < 10 ? "0" + current : current)}
 );
-	containeridols.slick({
+	
+	containerCuriosityText.slick({
 		autoplay: false,
 		autoplaySpeed: 4000,
+		asNavFor: '.slick-curiosity_img',
 		pauseOnFocus: false,
 		pauseOnHover: false,
 		arrows: true,
 		dots: false,
+		prevArrow: $('.curiosity-nav').find('.slick-prev'),
+        nextArrow: $('.curiosity-nav').find('.slick-next'),
 		adaptiveHeight: true,
-		prevArrow: $('.slick-nav_idols').find('.slick-prev'),
-        nextArrow: $('.slick-nav_idols').find('.slick-next'),
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		responsive: [{
@@ -52,17 +53,18 @@
 						}
 			
 			}]
-	}).on('afterChange', function(event, slick, currentSlide, nextSlide){
-		var current = currentSlide + 1;
-		$('.slick-nav_idols').find('.slick-numbers .current').html(current < 10 ? "0" + current : current)}
-);
-	containershield.slick({
+	});
+
+	containerCuriosityImg.slick({
 		autoplay: false,
+		asNavFor: '.slick-curiosity_text',
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
 		pauseOnHover: false,
-		arrows: false,
+		arrows: true,
 		dots: false,
+		prevArrow: $('.curiosity-nav').find('.slick-prev'),
+        nextArrow: $('.curiosity-nav').find('.slick-next'),
 		adaptiveHeight: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,

@@ -8,12 +8,13 @@ $vitrine-gray: #747474;
 
 @import "../components/reset-tray";
 
-
+@import "../fonts/bebas-neue";
 @import "../fonts/gotham-book";
 @import "../fonts/gotham-medium";
 @import "../fonts/gotham-bold";
 @import "../fonts/gotham-black";
 @import "../fonts/sporty";
+
 
 @import "../components/variables";
 
@@ -22,6 +23,7 @@ $vitrine-gray: #747474;
 @import "supercraque/chronology";
 @import "supercraque/curiosity";
 @import "../fonts/icons-font";
+
 @mixin md{
     @media (min-width: 1200px) { @content; }
 }

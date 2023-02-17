@@ -997,6 +997,16 @@ html .botao-lancamento:hover {
 }
 
 @font-face {
+  font-family: "bebas neue";
+  font-weight: normal;
+  src: url("fonts/bebas-neue/bebasneue-regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "bebas neue";
+  font-weight: normal;
+  src: url("fonts/bebas-neue/bebasneue-regular.ttf") format("opentype");
+}
+@font-face {
   font-family: "Gotham";
   src: url("fonts/gotham/Gotham-Book.eot?v2"); /* IE9 Compat Modes */
   src: url("fonts/gotham/Gotham-Book.eot?v2#iefix") format("embedded-opentype"), url("fonts/gotham/Gotham-Book.woff2?v2") format("woff2"), url("fonts/gotham/Gotham-Book.woff?v2") format("woff"), url("fonts/gotham/Gotham-Book.ttf?v2") format("truetype"), url("fonts/gotham/Gotham-Book.svg?v2#svgGotham") format("svg"); /* Legacy iOS */
@@ -1132,53 +1142,120 @@ p {
 
 .c-king {
   background-color: #000;
-  padding: 60px 0px;
+  padding: 80px 0px;
+}
+@media (min-width: 1200px) {
+  .c-king {
+    padding: 60px 0px;
+  }
 }
 .c-king .king-title {
-  font-size: 90px;
+  font-size: 70px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   letter-spacing: -1px;
+  font-family: "bebas neue";
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .c-king .king-title {
+    padding-bottom: 16px;
+    text-align: start;
+    font-size: 140px;
+  }
 }
 .c-king .king-content {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+  padding: 0px 20px;
+}
+@media (min-width: 1200px) {
+  .c-king .king-content {
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 0;
+    padding: 0;
+  }
 }
 .c-king .king-card {
   width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+@media (min-width: 1200px) {
+  .c-king .king-card {
+    margin: 0;
+  }
+}
+.c-king .slick__king .item {
+  display: flex !important;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .c-king .slick__king .item {
+    display: block;
+  }
 }
 .c-king .slick__king .item .king-card {
   width: 300px;
   padding: 32px;
   border-radius: 10px;
   background-color: #0F0F0F;
-  border: 1px solid #0F0F0F;
+  border: 1px solid #303030;
   cursor: pointer;
   transition: 0.8s ease-in-out;
 }
+@media (min-width: 1200px) {
+  .c-king .slick__king .item .king-card {
+    border: 1px solid #0F0F0F;
+  }
+}
 .c-king .slick__king .item .king-card .king-box-icon {
   height: 40px;
-  opacity: 0.5;
+  opacity: 1;
   transition: 0.8s ease-in-out;
 }
+@media (min-width: 1200px) {
+  .c-king .slick__king .item .king-card .king-box-icon {
+    opacity: 0.5;
+  }
+}
 .c-king .slick__king .item .king-card .king-box-title {
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
   margin-left: 16px;
   font-weight: 700;
   color: #363636;
   transition: 0.8s ease-in-out;
+  font-family: "bebas neue";
+  margin-bottom: 0px;
+  color: #FFFFFF;
+}
+@media (min-width: 1200px) {
+  .c-king .slick__king .item .king-card .king-box-title {
+    margin-bottom: 0px;
+    color: #363636;
+  }
 }
 .c-king .slick__king .item .king-card .king-box-content {
-  color: #363636;
+  color: #FFF;
   font-size: 18px;
   padding-top: 8px;
   transition: 0.8s ease-in-out;
 }
-.c-king .slick__king .item .king-card:hover {
-  border: 1px solid #FFA82D;
+@media (min-width: 1200px) {
+  .c-king .slick__king .item .king-card .king-box-content {
+    color: #363636;
+  }
+}
+@media (min-width: 1200px) {
+  .c-king .slick__king .item .king-card:hover {
+    border: 1px solid #FFA82D;
+  }
 }
 .c-king .slick__king .item .king-card:hover .king-box-icon {
   opacity: 1;
@@ -1202,26 +1279,49 @@ p {
 }
 
 .c-chronology {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-test.png");
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/mob-cronology.png");
   min-height: 100vh;
   padding: 100px 0px;
   background-size: cover;
   background-position: center;
 }
+@media (min-width: 1200px) {
+  .c-chronology {
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-test.png");
+  }
+}
 .c-chronology .box-chronology {
-  padding: 100px 0px 0px 0px;
+  padding: 100px 10px 0px 10px;
   align-items: center;
   position: relative;
+  margin-bottom: 42px;
 }
-.c-chronology .col-content {
-  margin-left: 82px;
+@media (min-width: 1200px) {
+  .c-chronology .box-chronology {
+    margin-bottom: 0px;
+    padding: 100px 0px 0px 0px;
+  }
+}
+.c-chronology .box-chronology:last-child {
+  margin-bottom: 0px;
+}
+@media (min-width: 1200px) {
+  .c-chronology .col-content {
+    margin-left: 92px;
+  }
 }
 .c-chronology .chronology-img {
   width: 100%;
+  min-height: 250px;
+}
+@media (min-width: 1200px) {
+  .c-chronology .chronology-img {
+    width: 100%;
+  }
 }
 .c-chronology .chronology-time {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   position: absolute;
   top: 20px;
   border-radius: 100%;
@@ -1232,99 +1332,171 @@ p {
   border: 1px solid #FFF;
   transform: translateX(-50%);
 }
+@media (min-width: 1200px) {
+  .c-chronology .chronology-time {
+    width: 200px;
+    height: 200px;
+  }
+}
 .c-chronology .chronology-time span {
-  font-size: 70px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 500;
   color: #FFF;
+  font-family: "bebas neue";
+}
+@media (min-width: 1200px) {
+  .c-chronology .chronology-time span {
+    font-size: 80px;
+    font-weight: 700;
+  }
 }
 .c-chronology .chronology-title {
   color: #FFF;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "bebas neue";
+  text-align: center;
+  padding-top: 42px;
+}
+@media (min-width: 1200px) {
+  .c-chronology .chronology-title {
+    padding-top: 0px;
+    text-align: start;
+    font-size: 50px;
+  }
+}
+.c-chronology .chronology-title br {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .c-chronology .chronology-title br {
+    display: block;
+  }
 }
 .c-chronology .chronology-content {
   color: #FFF;
   font-size: 16px;
   font-weight: 300;
   padding-top: 16px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .c-chronology .chronology-content {
+    text-align: start;
+  }
 }
 
-.c-win {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/bgwin.png");
-  padding: 70px 20px;
+.c-curiosity {
+  padding: 40px 0px;
+  background-color: #000;
 }
 @media (min-width: 1200px) {
-  .c-win {
-    padding: 70px 0px;
+  .c-curiosity {
+    padding: 80px 0px;
   }
 }
-.c-win .item {
-  padding-right: 8px;
+.c-curiosity .curiosity-box {
+  padding: 10px 50px;
 }
 @media (min-width: 1200px) {
-  .c-win .item {
-    padding-right: 32px;
+  .c-curiosity .curiosity-box {
+    padding: 10px 0px 0px 0px;
   }
 }
-.c-win .win-title {
-  text-align: center;
-  font-weight: 700;
-  color: #fff;
-  font-size: 40px;
-  padding-bottom: 32px;
-}
-.c-win .win-card {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  min-height: 350px;
-  border-radius: 20px;
-}
-.c-win .win-card_img {
-  filter: grayscale(1);
-  position: absolute;
-  transform: translate(-50%);
-  left: 50%;
-  height: 100%;
-}
-.c-win .win-card .width-100 {
-  width: 100%;
-  height: auto;
-}
-.c-win .win-card .tag_vasco {
-  position: absolute;
-  z-index: 999;
-  width: 35px;
-  height: 35px;
-  right: 10px;
-  top: 10px;
-}
-.c-win .win-card_box {
-  position: absolute;
-  background-color: #fff;
-  z-index: 99;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  min-height: 100px;
-  padding: 0px 16px;
-  justify-content: space-between;
-  align-items: center;
-}
-.c-win .win-card_box .box-content .title-card {
-  color: #313131;
-  font-weight: 700;
+.c-curiosity .curiosity-toptitle {
+  letter-spacing: 5px;
   font-size: 20px;
-  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #FFA82D;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 8px;
 }
-.c-win .win-card_box .box-content .content-card {
-  color: #747474;
+@media (min-width: 1200px) {
+  .c-curiosity .curiosity-toptitle {
+    padding-bottom: 0;
+    text-align: start;
+    font-size: 22px;
+  }
+}
+.c-curiosity .curiosity-title {
+  color: #FFF;
+  font-size: 40px;
   font-weight: 500;
+  text-transform: uppercase;
+  font-family: "bebas neue";
+  text-align: center;
+  padding-bottom: 16px;
 }
-.c-win .win-card_box .box-number .number {
-  font-size: 80px;
-  color: #C91B24;
-  font-weight: 800;
+@media (min-width: 1200px) {
+  .c-curiosity .curiosity-title {
+    text-align: start;
+    font-size: 85px;
+    padding-bottom: 0px;
+  }
+}
+.c-curiosity .curiosity-title br {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .c-curiosity .curiosity-title br {
+    display: block;
+  }
+}
+.c-curiosity .slick-curiosity_text .card-curiosity-text {
+  background-color: #FFA82D;
+  padding: 40px;
+}
+@media (min-width: 1200px) {
+  .c-curiosity .slick-curiosity_text .card-curiosity-text {
+    padding: 50px;
+  }
+}
+.c-curiosity .slick-curiosity_text .curiosity-card-title {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "bebas neue";
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .c-curiosity .slick-curiosity_text .curiosity-card-title {
+    text-align: start;
+  }
+}
+.c-curiosity .slick-curiosity_text .curiosity-card-content {
+  padding-top: 8px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .c-curiosity .slick-curiosity_text .curiosity-card-content {
+    text-align: start;
+  }
+}
+.c-curiosity .slick-curiosity_img .img-box {
+  width: 100%;
+  max-height: 700px;
+}
+@media (min-width: 1200px) {
+  .c-curiosity .slick-curiosity_img .img-box {
+    border-radius: 10px;
+  }
+}
+.c-curiosity .curiosity-nav {
+  position: absolute;
+  left: 42%;
+  bottom: 3%;
+}
+.c-curiosity .curiosity-nav button {
+  background: transparent;
+  border: none;
+}
+.c-curiosity .curiosity-nav button i {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.5019607843);
 }
 
 @font-face {

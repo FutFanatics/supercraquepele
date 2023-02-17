@@ -3,90 +3,115 @@
     @media (min-width: 1200px) { @content; }
 }
 
-.c-win{
-    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/bgwin.png');       
-    padding: 70px 20px;
-    
+.c-curiosity{
+    padding: 40px 0px;
+    background-color: #000;
+
     @include md{
-        padding: 70px 0px;
+        padding: 80px 0px;
     }
 
-    .item{
-        padding-right: 8px;
-        @include md{
-            padding-right: 32px;
+    .curiosity{
+        &-box{
+            @include md{
+                padding: 10px 0px 0px 0px;
+            }
+            padding: 10px 50px;
         }
-        
-    }
-    .win{
-        &-title{
+        &-toptitle{
+            letter-spacing: 5px;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #FFA82D;
+            font-weight: 600;
             text-align: center;
-            font-weight: 700;
-            color: #fff;
+            padding-bottom: 8px;
+            
+            @include md{
+                padding-bottom: 0;
+                text-align: start;
+                font-size: 22px;
+            }
+        }
+        &-title{
+            color: #FFF;
             font-size: 40px;
-            padding-bottom: 32px;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-family: 'bebas neue';
+            text-align: center;
+            padding-bottom: 16px;
+
+            @include md{
+                text-align: start;
+                font-size: 85px;
+                padding-bottom: 0px;
+            }
+            br{
+                display:  none;
+                @include md{
+                    display: block;
+                }
+            }
         }
-        
-        &-card{
-            position: relative;
-            overflow: hidden;
+    }
+    .slick-curiosity_text{
+        .card{
+            &-curiosity-text{
+                background-color: #FFA82D;
+                padding:40px;
+
+                @include md{
+                    padding: 50px;
+                }
+            }
+        }
+        .curiosity{
+            &-card-title{
+                color: #000;
+                text-transform: uppercase;
+                font-size: 50px;
+                font-weight: 500;
+                font-family: 'bebas neue';
+                text-align: center;
+                @include md{
+                    text-align: start;
+                }
+            }
+            &-card-content{
+                padding-top: 8px;
+                color: #000;
+                font-size: 16px;
+                text-align: center;
+                @include md{
+                    text-align: start;
+                }
+            }
+        }
+    }
+    .slick-curiosity_img{
+        .img-box{
             width: 100%;
-            min-height: 350px;
-            border-radius: 20px;
+            max-height: 700px;
 
-            &_img{
-                filter: grayscale(1);
-                position: absolute;
-                transform: translate(-50%);
-                left: 50%;
-                height: 100%;
-
-                
-            }
-            .width-100{
-                width: 100%;
-                height: auto;
-            }
-            .tag_vasco{
-                position: absolute;
-                z-index: 999;
-                width: 35px;
-                height: 35px;
-                right: 10px;
-                top: 10px;
-            }
-            &_box{
-                position: absolute;
-                background-color: #fff;
-                z-index: 99;
-                bottom: 0;
-                width: 100%;
-                display: flex;
-                min-height: 100px;
-                padding:0px 16px;
-                justify-content: space-between;
-                align-items: center;
-
-                .box-content{
-                    .title-card{
-                        color: #313131; 
-                        font-weight: 700;
-                        font-size: 20px;
-                        margin-bottom: 0;
-                    }
-                    .content-card{
-                        color: #747474;
-                        font-weight: 500;
-                    }
-                }
-                .box-number{
-                    .number{
-                        font-size: 80px;
-                        color:#C91B24 ;
-                        font-weight: 800;
-                    }
-                }
+            @include md{
+                border-radius: 10px;
             }
         }
+    }
+    .curiosity-nav{
+        position: absolute;
+        left: 42%;
+        bottom: 3%;
+
+        button{ 
+            background: transparent;
+            border: none;
+            i{
+                font-size: 25px;
+                color: #FFFFFF80;
+            }
+        }
+
     }
 }
