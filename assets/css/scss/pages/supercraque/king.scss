@@ -4,11 +4,21 @@
 .c-king{
     background-color: #000;
     padding: 80px 0px;
+    overflow: hidden;
 
     @include md{
         padding: 60px 0px;
     }
+    
+    .slick__king{
 
+        @include md{
+            width: 125%;
+        }
+    }
+    .item{
+        padding-right: 8px;
+    }
     .king{
         &-title{
             font-size: 70px;

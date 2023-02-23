@@ -15,7 +15,7 @@
 		prevArrow: $('.slick-nav_king').find('.slick-prev'),
         nextArrow: $('.slick-nav_king').find('.slick-next'),
 		adaptiveHeight: true,
-		slidesToShow: 4,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		responsive: [{
 			breakpoint: 768,

@@ -1067,13 +1067,18 @@ p {
 }
 
 .c-home {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/homedeskpele.jpg");
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-mob-pele.png");
   min-height: 100vh;
   position: relative;
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 1200px) {
+  .c-home {
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-desk-pele.png");
+  }
 }
 .c-home .home-text {
   color: #FFFFFF;
@@ -1143,11 +1148,20 @@ p {
 .c-king {
   background-color: #000;
   padding: 80px 0px;
+  overflow: hidden;
 }
 @media (min-width: 1200px) {
   .c-king {
     padding: 60px 0px;
   }
+}
+@media (min-width: 1200px) {
+  .c-king .slick__king {
+    width: 125%;
+  }
+}
+.c-king .item {
+  padding-right: 8px;
 }
 .c-king .king-title {
   font-size: 70px;
@@ -1287,7 +1301,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-chronology {
-    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-test.png");
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg_cronology.png");
   }
 }
 .c-chronology .box-chronology {
