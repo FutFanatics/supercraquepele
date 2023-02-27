@@ -2,6 +2,7 @@
 
 	var containerking= $('.slick__king')
 	var containerwin = $(".win__slick")
+	var containerdetails = $(".slick__details")
 	var containerCuriosityText = $(".slick-curiosity_text")
 	var containerCuriosityImg = $(".slick-curiosity_img")
 
@@ -88,6 +89,28 @@
 		dots: false,
 		adaptiveHeight: true,
 		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+
+						}
+			
+			}]
+	});
+
+	containerdetails.slick({
+		autoplay: false,
+		asNavFor: '.slick__details',
+		autoplaySpeed: 4000,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+		arrows: false,
+		dots: false,
+		adaptiveHeight: true,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		responsive: [{
 			breakpoint: 768,
