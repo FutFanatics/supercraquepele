@@ -62,7 +62,9 @@
                 padding:40px;
 
                 @include md{
-                    padding: 50px;
+                    height: 370px;
+                    display: flex;
+                    justify-content: center;
                 }
             }
         }
