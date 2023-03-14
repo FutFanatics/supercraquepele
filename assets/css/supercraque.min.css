@@ -1311,6 +1311,10 @@ p {
   height: 30px;
   width: 30px;
 }
+.c-details .slick-track {
+  display: flex;
+  align-items: center;
+}
 .c-details .item {
   display: flex;
   flex-direction: column;
@@ -1440,11 +1444,11 @@ p {
 }
 .c-chronology .chronology-img {
   width: 100%;
-  min-height: 250px;
 }
 @media (min-width: 1200px) {
   .c-chronology .chronology-img {
     width: 100%;
+    min-height: 250px;
   }
 }
 .c-chronology .chronology-time {
@@ -1505,7 +1509,7 @@ p {
   color: #FFF;
   font-size: 16px;
   font-weight: 300;
-  padding-top: 16px;
+  padding-top: 32px;
   text-align: center;
 }
 @media (min-width: 1200px) {

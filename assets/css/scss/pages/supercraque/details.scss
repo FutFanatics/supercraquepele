@@ -15,7 +15,10 @@
         }
     }
     
-
+    .slick-track{
+        display: flex;
+        align-items: center;
+    }
     .item{
         display: flex;
         flex-direction: column;
