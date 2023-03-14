@@ -86,7 +86,7 @@
 		arrows: false,
 		dots: false,
 		adaptiveHeight: true,
-		slidesToShow: 3,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		responsive: [{
 			breakpoint: 768,
@@ -153,7 +153,7 @@
 
 					// lozad('.lozad', {
 					//     load: function(target)
- {
+ 
 					//             target.src = target.dataset.src;
 					//             target.onload = function() {
 					//                 target.classList.add('fadein');
@@ -233,7 +233,7 @@
         autoplay: false,
         infinite: true,
         speed: 500,
-        arrows: false,
+        arrows: true,
         dots: true,
         slidesToShow: 5,
         slidesToScroll: 5,

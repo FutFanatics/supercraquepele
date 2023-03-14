@@ -1301,13 +1301,23 @@ p {
   border-top: 1px solid #DF9327;
   border-bottom: 1px solid #DF9327;
 }
+.c-details .item-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.c-details .item-img .icon-king {
+  height: 30px;
+  width: 30px;
+}
 .c-details .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .c-details .item .details_title {
-  font-size: 35px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #DF9327;
   text-align: center;
@@ -1316,9 +1326,89 @@ p {
 .c-details .item .details_bottom-title {
   font-family: "bebas neue";
   color: #FFF;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.c-vitrine {
+  background-color: #000;
+  padding: 60px 0px;
+}
+.c-vitrine .vitrine-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 700;
+  color: #535353;
+}
+.c-vitrine #vitrine-fut .item {
+  padding-right: 16px;
+  position: relative;
+}
+.c-vitrine #vitrine-fut .item .link:hover {
+  text-decoration: none;
+}
+.c-vitrine #vitrine-fut .item .discount {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  background-color: #FFA82D;
+  font-weight: 800;
+  color: #000;
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 3px 7px;
+}
+.c-vitrine #vitrine-fut .item .tags {
+  margin-top: 8px;
+}
+.c-vitrine #vitrine-fut .item .tags .lancamento {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  padding: 3px 10px;
+  background-color: #535353;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-right: 8px;
+}
+.c-vitrine #vitrine-fut .item .tags .lancamento:hover {
+  text-decoration: none;
+}
+.c-vitrine #vitrine-fut .item .tags .oferta {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  padding: 3px 10px;
+  background-color: #FFA82D;
+  font-size: 12px;
+  border-radius: 20px;
+}
+.c-vitrine #vitrine-fut .item .tags .oferta:hover {
+  text-decoration: none;
+}
+.c-vitrine #vitrine-fut .item .title {
+  font-size: 16px;
+  color: #747474;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.c-vitrine #vitrine-fut .item .price .old-price {
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: 12px;
+  color: #747474;
+}
+.c-vitrine #vitrine-fut .item .price .current-price {
+  font-size: 16px;
+  font-weight: 800;
+  color: #747474;
+}
+.c-vitrine #vitrine-fut .item .price .installments {
+  color: #747474;
+  font-size: 14px;
+  margin-top: 2px;
 }
 
 .c-chronology {
