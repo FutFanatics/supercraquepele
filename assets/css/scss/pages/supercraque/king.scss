@@ -54,8 +54,10 @@
             width: 100%;
             margin-top: 8px;
             margin-bottom: 8px;
+            
             @include md{
                 margin: 0;
+                
             }
         }
 
@@ -69,17 +71,19 @@
                 display: block;
             }
             .king-card{
-                width: 300px;
+                width: 350px;
                 padding: 32px;
                 border-radius: 10px;
-                background-color: #0F0F0F;
+                background: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-card-king.png');
+                background-size: contain;
+                background-repeat: no-repeat;
                 border: 1px solid #303030;
                 cursor: pointer;
                 transition: 0.8s ease-in-out;
 
                 @include md{
                     border: 1px solid #0F0F0F;
-                    
+                    height:350px;                    
                 }
 
                 .king{
@@ -110,7 +114,7 @@
                     }
                     &-box-content{
                         color: #FFF;
-                        font-size: 18px;
+                        font-size: 16px;
                         padding-top: 8px;
                         transition: 0.8s ease-in-out;
 
