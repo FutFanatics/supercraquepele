@@ -1214,12 +1214,27 @@ p {
     display: block;
   }
 }
+.c-king .slick__king .item .circle {
+  width: 45px;
+  height: 45px;
+  background-color: #0F0F0F;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease 0.8s;
+}
+.c-king .slick__king .item .circle-number {
+  font-family: "bebas neue";
+  font-size: 23px;
+  font-weight: 700;
+}
 .c-king .slick__king .item .king-card {
   width: 350px;
   padding: 32px;
   border-radius: 10px;
   background: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-card-king.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #303030;
   cursor: pointer;
@@ -1256,6 +1271,7 @@ p {
   .c-king .slick__king .item .king-card .king-box-title {
     margin-bottom: 0px;
     color: #363636;
+    margin-left: 16px;
   }
 }
 .c-king .slick__king .item .king-card .king-box-content {
@@ -1282,6 +1298,12 @@ p {
 }
 .c-king .slick__king .item .king-card:hover .king-box-content {
   color: #FFFFFF;
+}
+.c-king .slick__king .item .king-card:hover .circle {
+  background-color: #FFA82D;
+}
+.c-king .slick__king .item .king-card:hover .circle-number {
+  color: #0F0F0F;
 }
 .c-king .slick-nav_king {
   margin-bottom: 8px;
@@ -1337,7 +1359,7 @@ p {
 
 .c-vitrine {
   background-color: #000;
-  padding: 60px 0px;
+  padding: 80px 0px;
 }
 .c-vitrine .vitrine-title {
   font-size: 20px;
@@ -1538,7 +1560,7 @@ p {
 }
 .c-curiosity .curiosity-toptitle {
   letter-spacing: 5px;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #FFA82D;
   font-weight: 600;
@@ -1550,11 +1572,12 @@ p {
     padding-bottom: 0;
     text-align: start;
     font-size: 22px;
+    letter-spacing: 5px;
   }
 }
 .c-curiosity .curiosity-title {
   color: #FFF;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 500;
   text-transform: uppercase;
   font-family: "bebas neue";
@@ -1632,6 +1655,37 @@ p {
 .c-curiosity .curiosity-nav button i {
   font-size: 25px;
   color: rgba(255, 255, 255, 0.5019607843);
+}
+.c-curiosity .slick__mob_curiosity .box-text {
+  padding: 32px;
+  background-color: #FFA82D;
+}
+.c-curiosity .slick__mob_curiosity .box-text .text-curiosity-mob {
+  text-align: center;
+}
+.c-curiosity .slick__mob_curiosity .slick-dots {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.c-curiosity .slick__mob_curiosity .slick-dots button {
+  font-size: 0;
+  background: #262626;
+  width: 20px;
+  height: 5px;
+  border-radius: 4px;
+  border: 0;
+  margin: 0 5px;
+  opacity: 0.3;
+  outline: none;
+  transition: all 0.2s ease;
+}
+.c-curiosity .slick__mob_curiosity .slick-dots li.slick-active button {
+  opacity: 1;
+  width: 40px;
+  background: #808080;
 }
 
 @font-face {

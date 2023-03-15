@@ -5,7 +5,7 @@
 	var containerdetails = $(".slick__details")
 	var containerCuriosityText = $(".slick-curiosity_text")
 	var containerCuriosityImg = $(".slick-curiosity_img")
-
+	var containerCuriositymob = $(".slick__mob_curiosity")
 	
 	
 	containerCuriosityText.slick({
@@ -40,6 +40,30 @@
 		pauseOnHover: false,
 		arrows: true,
 		dots: false,
+		prevArrow: $('.curiosity-nav').find('.slick-prev'),
+        nextArrow: $('.curiosity-nav').find('.slick-next'),
+		adaptiveHeight: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+
+						}
+			
+			}]
+	});
+
+	containerCuriositymob.slick({
+		autoplay: false,
+		asNavFor: '.slick-curiosity_text',
+		autoplaySpeed: 4000,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+		arrows: true,
+		dots: true,
 		prevArrow: $('.curiosity-nav').find('.slick-prev'),
         nextArrow: $('.curiosity-nav').find('.slick-next'),
 		adaptiveHeight: true,
