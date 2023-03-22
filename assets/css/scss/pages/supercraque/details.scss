@@ -3,25 +3,59 @@
     background-color: #000;
     border-top: 1px solid #DF9327;
     border-bottom: 1px solid #DF9327;
+    overflow: hidden;
 
+    .container__details{
+        animation: backgroundanimation 30s linear infinite;
+
+        @keyframes backgroundanimation {
+            0%{
+                transform: translateX(10%);
+            }
+            50%{
+                transform: translateX(-75%);
+            }
+            100%{
+                transform: translateX(10%);
+            }
+            
+            
+        }
+    }
+    .bottom__details{
+        animation: bottomanimation 30s linear infinite;
+        display: flex;
+
+        @keyframes bottomanimation {
+            0%{
+                transform: translateX(-75%);
+            }
+            50%{
+                transform: translateX(10%);
+            }
+            100%{
+                transform: translateX(-75%);
+            }
+            
+        }
+    }
     .item-img{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        min-width: 100px;
         .icon-king{
             height: 30px;
             width: 30px;
         }
     }
     
-    .slick-track{
-        display: flex;
-        align-items: center;
-    }
+    
     .item{
         display: flex;
         flex-direction: column;
+        min-width: 400px;
         justify-content: center;
         
         .details{

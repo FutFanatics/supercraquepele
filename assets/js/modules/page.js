@@ -58,14 +58,11 @@
 
 	containerCuriositymob.slick({
 		autoplay: false,
-		asNavFor: '.slick-curiosity_text',
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
 		pauseOnHover: false,
-		arrows: true,
+		arrows:false,
 		dots: true,
-		prevArrow: $('.curiosity-nav').find('.slick-prev'),
-        nextArrow: $('.curiosity-nav').find('.slick-next'),
 		adaptiveHeight: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -115,8 +112,8 @@
 		responsive: [{
 			breakpoint: 768,
 			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
+				slidesToShow: 2,
+				slidesToScroll: 2,
 				
 			}
 			
@@ -253,18 +250,39 @@
 
 	vitrine.html('');
 
-    vitrine.slick({
-        autoplay: false,
-        infinite: true,
-        speed: 500,
-        arrows: true,
-        dots: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-//        lazyLoad: 'ondemand',
-        prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="sprite icon-arrow-left"></i></button>',
-        nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="sprite icon-arrow-right"></i></button>'
-    });
+
+	if (isMobile()) {
+		vitrine.slick({
+			autoplay: false,
+			infinite: false,
+			speed: 500,
+			arrows: false,
+			dots: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+	//        lazyLoad: 'ondemand',
+			prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="sprite icon-arrow-left"></i></button>',
+			nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="sprite icon-arrow-right"></i></button>',
+		});
+
+	} else {
+
+		vitrine.slick({
+			autoplay: false,
+			infinite: false,
+			speed: 500,
+			arrows: true,
+			dots: true,
+			slidesToShow: 5,
+			slidesToScroll: 5,
+	//        lazyLoad: 'ondemand',
+			prevArrow: '<button class="slick-prev slick-arrow" type="button"><i class="sprite icon-arrow-left"></i></button>',
+			nextArrow: '<button class="slick-next slick-arrow" type="button"><i class="sprite icon-arrow-right"></i></button>',
+		});
+
+	}
+    
+	
 
 
 
@@ -385,6 +403,7 @@
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
+				dots:true,
 
 						}
 			
@@ -444,6 +463,15 @@
 			$('.slick-list', slider).height(tallestSlide);
         }, 10);
     }
+
+
+	function isMobile() {
+		if (window.innerWidth > 991) {
+			return false;
+		}
+		return true;
+	}
+	
 
 })(jQuery);
 

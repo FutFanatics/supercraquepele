@@ -108,8 +108,13 @@
         bottom: 3%;
 
         button{ 
-            background: transparent;
+            background: rgba(0, 0, 0, 0.1);
+            display: flex;
             border: none;
+            padding: 5px;
+            justify-content: center;
+            margin: 0px 3px;
+            border-radius: 3px;
             i{
                 font-size: 25px;
                 color: #FFFFFF80;
