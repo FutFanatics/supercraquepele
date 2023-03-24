@@ -1,5 +1,5 @@
 
-//sass --watch assets/css/scss/pages/supercraque.min.scss:assets/css/supercraque.min.css
+//sass --watch assets/css/scss/pages/super-craque-pele.min.scss:assets/css/super-craque-pele.min.css
 
 $vitrine-blue: #192C53;
 $vitrine-gray: #747474;
@@ -18,14 +18,13 @@ $vitrine-gray: #747474;
 
 @import "../components/variables";
 
-@import "supercraque/home";
-@import "supercraque/king";
-@import "supercraque/details";
-@import "supercraque/vitrine";
-@import "supercraque/chronology";
-@import "supercraque/curiosity";
+@import "super-craque-pele/home";
+@import "super-craque-pele/king";
+@import "super-craque-pele/details";
+@import "super-craque-pele/vitrine";
+@import "super-craque-pele/chronology";
+@import "super-craque-pele/curiosity";
 @import "../fonts/icons-font";
-
 @mixin md{
     @media (min-width: 1200px) { @content; }
 }

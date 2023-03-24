@@ -49,10 +49,12 @@
             justify-content: center;
             border: 1px solid #FFF;
             transform: translateX(-50%);
+            z-index: 1;
 
             @include md{
                 width: 200px;
                 height: 200px;
+                z-index: 1;
             }
             
             span{

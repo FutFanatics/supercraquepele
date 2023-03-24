@@ -1050,6 +1050,149 @@ html .botao-lancamento:hover {
   src: url("fonts/sporty/SportyPro-Bold.otf") format("opentype");
 }
 /** PAGE PALMEIRAS **/
+header {
+  color: #000000;
+}
+header .logo {
+  color: #939393;
+}
+header .menu-mob-open {
+  color: #D7D7D7;
+}
+header .header-top {
+  background-color: #000000;
+}
+header .header-top .header-infos {
+  background-color: #000000;
+}
+header .header-top .header-infos .link-inter .icon-link-inter {
+  color: #939393;
+}
+header .header-top .header-infos .link-inter:hover a {
+  background-color: #939393;
+  color: #000000;
+}
+header .header-top .header-infos .link-inter:hover .icon-link-inter {
+  color: #000000;
+}
+header .header-top .header-nav {
+  background-color: #000000;
+  border: 1px solid #939393;
+  border-left: none;
+  border-right: none;
+}
+header .header-top .header-nav nav ul li.hover a::before {
+  background-color: #939393;
+}
+header .header-top .header-nav nav ul li .child-container {
+  background-color: #000000;
+}
+header .header-top .header-nav nav ul li .child-container ul li .menu-title {
+  color: #FFFFFF !important;
+}
+header .header-top .header-nav nav ul li .child-container ul li .see-all {
+  color: #939393;
+}
+header .header-top .header-nav nav ul li .child-container ul .menu-links a {
+  background-color: #939393;
+  color: #000000;
+}
+header .header-top .header-nav nav ul li .child-container ul .menu-links a:hover {
+  background-color: #FFFFFF;
+}
+header .header-top .header-nav nav ul li a {
+  color: #939393;
+}
+header .links-usuario a {
+  color: #939393;
+}
+header .links-usuario .central .menu-central {
+  background-color: #000000;
+}
+header .links-usuario .central .menu-central a {
+  color: #939393;
+}
+header .links-usuario .cart-header .menu-cart .cart-products li .product-data h3, header .links-usuario .cart-header .menu-cart .cart-added li .product-data h3, header .links-usuario .cart-header .cart-note .cart-products li .product-data h3, header .links-usuario .cart-header .cart-note .cart-added li .product-data h3 {
+  color: #939393;
+}
+header .links-usuario .cart-header .menu-cart .cart-products li .product-data .product-price, header .links-usuario .cart-header .menu-cart .cart-added li .product-data .product-price, header .links-usuario .cart-header .cart-note .cart-products li .product-data .product-price, header .links-usuario .cart-header .cart-note .cart-added li .product-data .product-price {
+  color: #939393;
+}
+header .links-usuario .cart-header .menu-cart {
+  background-color: #000000;
+  border: 1px solid #939393;
+}
+header .links-usuario .cart-header .menu-cart .cart-products .product-data h3 {
+  color: #939393;
+}
+header .links-usuario .cart-header .menu-cart .cart-products .product-data .product-price {
+  color: #939393;
+}
+header .links-usuario .cart-header .menu-cart .cart-subtotal {
+  color: #939393;
+}
+header .links-usuario .cart-header .menu-cart a {
+  background-color: #939393;
+  color: #000000;
+}
+
+@media (max-width: 991px) {
+  header .header-nav nav .nav-top {
+    background: #000000;
+    color: #D7D7D7;
+  }
+  header .header-nav nav .nav-top i {
+    color: #D7D7D7;
+  }
+  header .header-nav nav ul {
+    background: #1F1F1F;
+  }
+  header .header-nav nav ul li {
+    border-color: #404040;
+  }
+  header .header-nav nav ul li i {
+    color: #757575;
+  }
+  header .header-nav nav ul li.link-user {
+    background: #939393;
+  }
+  header .header-nav nav ul li.link-user a, header .header-nav nav ul li.link-user i {
+    color: #000000;
+  }
+  header .header-nav nav ul li.back {
+    background: #939393;
+    color: #000000;
+  }
+  header .header-nav nav ul li.back i {
+    color: #000000;
+  }
+  header .header-nav nav ul li a {
+    color: #D7D7D7;
+  }
+  header .header-nav nav ul li a.link-inter {
+    border-color: #D7D7D7 !important;
+  }
+  header .header-nav nav ul li.menu-feature {
+    background: #333333;
+  }
+  header .header-nav nav ul li.menu-feature a {
+    color: #D7D7D7;
+  }
+  footer {
+    background: black;
+    color: #404040;
+    border-top: 1px solid #757575;
+  }
+  footer .footer-menus h3[data-toggle=collapse] {
+    border-color: #404040;
+  }
+  footer .footer-menus h3[data-toggle=collapse] i {
+    color: #757575;
+  }
+  footer .footer-menus ul {
+    border-color: #000000;
+  }
+}
 p {
   margin-bottom: 0px;
 }
@@ -1216,7 +1359,7 @@ p {
     display: block;
   }
 }
-.c-king .slick__king .item .circle {
+.c-king .slick__king .item .circle-pele {
   width: 40px;
   height: 40px;
   background-color: #FFA82D;
@@ -1227,11 +1370,11 @@ p {
   transition: ease 0.8s;
 }
 @media (min-width: 1200px) {
-  .c-king .slick__king .item .circle {
+  .c-king .slick__king .item .circle-pele {
     background-color: #0F0F0F;
   }
 }
-.c-king .slick__king .item .circle-number {
+.c-king .slick__king .item .circle-pele-number {
   font-family: "bebas neue";
   font-size: 20px;
   font-weight: 700;
@@ -1320,10 +1463,10 @@ p {
 .c-king .slick__king .item .king-card:hover .king-box-content {
   color: #FFFFFF;
 }
-.c-king .slick__king .item .king-card:hover .circle {
+.c-king .slick__king .item .king-card:hover .circle-pele {
   background-color: #FFA82D;
 }
-.c-king .slick__king .item .king-card:hover .circle-number {
+.c-king .slick__king .item .king-card:hover .circle-pele-number {
   color: #0F0F0F;
 }
 .c-king .slick__king .slick-dots {
@@ -1442,7 +1585,7 @@ p {
   color: #535353;
 }
 .c-vitrine #vitrine-fut .item {
-  padding-right: 16px;
+  padding-right: 8px;
   position: relative;
 }
 .c-vitrine #vitrine-fut .item .link:hover {
@@ -1458,6 +1601,12 @@ p {
   font-size: 12px;
   border-radius: 20px;
   padding: 3px 7px;
+  display: flex;
+  align-items: center;
+}
+.c-vitrine #vitrine-fut .item .discount i {
+  font-size: 5px;
+  margin-right: 1px;
 }
 .c-vitrine #vitrine-fut .item .tags {
   margin-top: 8px;
@@ -1560,6 +1709,21 @@ p {
   width: 40px;
   background: #FFA82D;
 }
+.c-vitrine .slick-nav_vitrine {
+  padding: 0px 6%;
+  top: 40%;
+  position: absolute;
+  width: 100%;
+}
+.c-vitrine .slick-nav_vitrine .slick-prev, .c-vitrine .slick-nav_vitrine .slick-next {
+  background-color: transparent;
+  border: none;
+}
+.c-vitrine .slick-nav_vitrine .slick-prev i, .c-vitrine .slick-nav_vitrine .slick-next i {
+  color: #939393;
+  font-size: 22px;
+  font-weight: 700;
+}
 
 .c-chronology {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/mob-cronology.png");
@@ -1609,11 +1773,13 @@ p {
   justify-content: center;
   border: 1px solid #FFF;
   transform: translateX(-50%);
+  z-index: 1;
 }
 @media (min-width: 1200px) {
   .c-chronology .chronology-time {
     width: 200px;
     height: 200px;
+    z-index: 1;
   }
 }
 .c-chronology .chronology-time span {
@@ -1729,7 +1895,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-curiosity .slick-curiosity_text .card-curiosity-text {
-    height: 370px;
+    height: 365px;
     display: flex;
     justify-content: center;
   }
@@ -1764,7 +1930,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-curiosity .slick-curiosity_img .img-box {
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 0px;
   }
 }
 .c-curiosity .curiosity-nav {
@@ -2266,4 +2432,4 @@ p {
   content: "\e95e";
 }
 
-/*# sourceMappingURL=supercraque.min.css.map */
+/*# sourceMappingURL=super-craque-pele.min.css.map */

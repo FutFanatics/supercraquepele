@@ -20,7 +20,7 @@
 
 
         .item{
-            padding-right: 16px;
+            padding-right: 8px;
             position: relative;
 
         
@@ -40,6 +40,13 @@
                 font-size: 12px;
                 border-radius: 20px;
                 padding: 3px 7px;
+                display: flex;
+                align-items: center;
+
+                i{
+                    font-size:5px;
+                    margin-right: 1px;
+                }
             }
             .tags{
                 margin-top: 8px;
@@ -145,6 +152,22 @@
                     width: 40px;
                     background:#FFA82D;
                 }
+            }
+        }
+    }
+    .slick-nav_vitrine{
+        padding: 0px 6%;
+        top: 40%;
+        position: absolute;
+        width: 100%;
+        .slick-prev, .slick-next{
+            background-color: transparent;
+            border: none;
+
+            i{
+                color: #939393;
+                font-size: 22px;
+                font-weight: 700;
             }
         }
     }
